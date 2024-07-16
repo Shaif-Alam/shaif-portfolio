@@ -1,0 +1,49 @@
+.about-p{
+
+    width: 100%;
+    background-color:#C60031;
+    color:white;
+}
+.skill-box
+{
+
+    background-color: #ffffff;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #3D3E42;
+   
+ 
+}
+.my-auto {
+    text-align: center; /* Center child content horizontally */
+  }
+.skill-box:hover
+{
+
+    background-color:#F0BF6C;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    color: black;
+  
+}
+.img-div{
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+.img-divz{
+    margin-left: 295px;
+    margin-right: 295px;
+}
+
+.img-divs{
+    margin-left: 420px;
+    margin-right: 420px;
+}
+

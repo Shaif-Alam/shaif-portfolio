@@ -1,0 +1,43 @@
+.main{
+    width: 100%;
+    background-color:#C60031;
+    border-radius: 5px;
+    border: 2px solid  #FFC86B;
+}
+.btn{
+    background-color: #ffffff;
+    color:#C60031;
+    height: 60px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300px;
+    border-radius: 8px; 
+    border: none;
+   
+  
+}
+
+.btn:hover{
+    background-color: #FFC86B;
+    color:#31333B;
+    height: 60px;
+    width: 300px;
+    border-radius: 8px; 
+    border: none;
+}
+.btn-2{
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.mainsecond{
+
+    background-color: #ffffff;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #ffff08;
+    align-items: center;
+}
+div>h1{
+    color: #000000;
+}

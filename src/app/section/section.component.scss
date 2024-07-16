@@ -1,0 +1,215 @@
+.section-main{
+    height: 600px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 55px 510px 58px #ffffff;
+}
+.right{
+    height: 600px;
+    width: 100%;
+    background-color:#ffffff;
+    display:  flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.left{
+    height: 600px;
+    width: 100%;
+
+}
+h2{
+    margin-right: 22px;
+}
+
+a{
+    color: #C60031;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: none;
+    font-family:'Times New Roman', Times, serif
+}
+
+
+// .contact-btn { 
+//     width: 140px;
+   
+//     color: #ffff02;
+//     height:  56px;
+//     border-radius: 10px;
+//     background-color:  #31333B;
+//     margin-top: 30px;
+// }
+
+// .contact-btn:hover{
+//     width: 140px;
+//     color: #31333B;
+//     height:  56px;
+//     border-radius: 10px;
+//     background-color:  #FFC86B;
+    
+    
+// }
+h1 {
+    color: #C60031;
+}
+
+// img{
+//     background-size: cover;
+//     overflow: hidden;
+//     z-index: -1;
+// }
+.pipe{
+    border-left:115px solid #e73a3a;
+    height: 140px;
+    
+    position: absolute;
+display: flex;
+
+float:left;
+bottom: 0;
+right: 0;
+margin-top: -152px;
+ }
+
+//  .pipes{
+//     position: relative;
+//  }
+.imgs{
+   
+object-fit: cover;
+}
+img
+{
+    z-index: -2;
+    background-size: covers;
+    mix-blend-mode: darken;
+    object-fit: cover;
+}
+
+.bodys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+    
+}
+
+.containers {
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: spin 4s linear infinite alternate;
+    
+}
+
+.face{
+
+    background-color: #3D3E42;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+ 
+}
+.cube {
+    width: 10%;
+    height: 10%;
+    transform-style: preserve-3d;
+    transform: rotate(45deg);
+  
+    
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #C60031;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+     box-shadow: 5px 5px 15px #C60031;/* Add a shadow */
+}
+
+.fronts  { transform: translateZ(100px); }
+.backs   { transform: translateZ(-100px) rotateY(180deg); }
+.rights  { transform: translateX(100px) rotateY(90deg); }
+.lefts   { transform: translateX(-100px) rotateY(-90deg); }
+.tops    { transform: translateY(-100px) rotateX(90deg); }
+.bottoms { transform: translateY(100px) rotateX(-90deg); }
+
+@keyframes spin {
+    0%   { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    25%  { transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg); }
+    50%  { transform: rotateX(90deg) rotateY(90deg) rotateZ(0deg); }
+    75%  { transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg); }
+    100% { transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg); } }
+    .d-flex {
+        display: flex;
+    }
+
+    /* Styles for mobile devices */
+    @media only screen and (max-width: 600px) {
+        h2 {
+            font-size: 36px; /* Adjust the font size for smaller screens */
+        }
+
+        h1 {
+            font-size: 36px; /* Adjust the font size for smaller screens */
+        }
+
+        .font-two {
+            font-size: 18px; /* Adjust the font size for smaller screens */
+        }
+
+        .contact-btn {
+            font-size: 16px; /* Adjust the font size for smaller screens */
+        }
+
+        .cube {
+            width: 80px; /* Adjust the cube size for smaller screens */
+            height: 80px; /* Adjust the cube size for smaller screens */
+        }
+
+        .face {
+            font-size: 12px; /* Adjust the font size of cube faces for smaller screens */
+        }
+    }
+
+    /* Styles for desktop screens */
+    @media only screen and (min-width: 601px) {
+        h2 {
+            font-size: 72px;
+        }
+
+        h1 {
+            font-size: 72px;
+        }
+
+        .font-two {
+            font-size: 24px;
+        }
+
+        .contact-btn {
+            font-size: 18px;
+        }
+
+        .cube {
+            width: 150px;
+            height: 150px;
+        }
+
+        .face {
+            font-size: 16px;
+        }
+    }
