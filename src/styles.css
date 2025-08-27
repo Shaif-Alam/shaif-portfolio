@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Importing Bootstrap SCSS file. */
+
+
+.font{
+    font-family: 'Bebas Neue', sans-serif;
+}
+.font-one{
+    font-family: 'Cinzel', serif;
+}
+.font-two{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,li{
+    font-family: 'Montserrat', sans-serif;
+}
+*::selection{
+    color:#000000; ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Importing Bootstrap SCSS file. */
+
