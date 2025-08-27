@@ -11,3 +11,115 @@ h1{
 // ulli{
 //     font-size: clamp(18px, 1.5vw, 32px);
 // }
+.fonrh3{
+     font-family: 'Times New Roman';
+}
+
+li{
+          font-family: 'Times New Roman';
+}
+
+/* projects.component.scss */
+.project-card {
+  width: 100%;
+  margin: auto;
+  
+  .img1 {
+    height: 200px;
+    object-fit:contain;
+  }
+  .img2 {
+    height: 200px;
+    object-fit:cover;
+  }
+
+  mat-card-title a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+  }
+}
+
+
+.dicrip{
+     font-size: 14px;
+      font-family: 'Times New Roman';
+}
+
+
+.project-card {
+  width: 100%;
+  margin: auto;
+
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  mat-card-title a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  button[mat-button] {
+    font-size: 14px;
+    text-transform: none;
+    padding: 0;
+  }
+}
+
+.project-card {
+  width: 100%;
+  margin: auto;
+
+  .cover-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;   /* default for most images */
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .contain-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* only HealthMagus */
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #f5f5f5; /* optional: background for empty space */
+  }
+  .fit-image{
+    object-fit:cover;
+  }
+
+  mat-card-title a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times,;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  button[mat-button] {
+    font-size: 14px;
+    text-transform: none;
+    padding: 0;
+  }
+}
+
+
+.fonto{
+   font-family: 'Times New Roman', Times;
+   font-size: 16px;
+}

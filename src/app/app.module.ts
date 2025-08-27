@@ -12,6 +12,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatrialModule } from './modules/matrial/matrial.module';
 
 
 @NgModule({
@@ -30,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
+    NgbModule,
+    MatrialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

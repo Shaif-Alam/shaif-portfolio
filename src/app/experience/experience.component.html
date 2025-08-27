@@ -2,9 +2,8 @@
 <div class="main p-5" id="experince">
     <h1 class="font-one animate__animated animate__fadeInUp fw-bold" >Experience </h1><br>
 <div class="container-fluid container animate__animated animate__zoomIn">
-   <h3 class="m-0 p-0">Full Stack Developer Developer | KairosMagus Pvt Ltd</h3>  <br>
-   <br>
-   <h4 class="m-0 p-0">Hyderabad, INDIA | June 2022 Present</h4> <br>
+   <h3 class="m-0 p-0 fonrh3">Full Stack Developer Developer | KairosMagus Pvt Ltd</h3>  <br>
+   <h4 class="m-0 p-0 fonrh3">Hyderabad, INDIA | June 2022  Jan 2025</h4> <br>
    <ul><li>Collaborated with UI/UX designers to implement responsive and interactive user interfaces using Angular framework.</li>
 <li>Developed and maintained front-end components and services, ensuring high performance and code quality. </li>
 <li> Integrated RESTful APIs and managed data flow to deliver dynamic content to users. </li>
@@ -14,8 +13,45 @@
 <li> Conducted performance optimization and troubleshooting to enhance application efficiency</li>
 </ul>
     
-  
+</div>  
+<div class="container-fluid container animate__animated animate__zoomIn">
+   <h3 class="m-0 p-0 fonrh3">Freelance Developer | Carve Chat Application</h3>  <br>
+   <h4 class="m-0 p-0 fonrh3">Bangalore karnataka, INDIA | March 2024</h4> <br>
+   <ul><li>Developed <a href="https://carve-sage.vercel.app/home" target="_blank" rel="noopener noreferrer">Carve</a>, a secure real-time chat platform with private rooms.</li>
+<li>Built frontend with Angular, typescript & Material; backend with Node.js & Socket.io.</li>
+<li> Integrated RESTful APIs and managed data flow to deliver dynamic content to users. </li>
+<li>Utilized NodeJS for backend interaction and data processing. </li>
+<li>Designed privacy-first, real-time messaging architecture.</li>
+<li>Contributed to continuous integration and deployment processes using Git and AWS. </li>
+<li>Delivered a seamless UI/UX for global users</li>
+</ul>
+    
+</div>  
+
+<h1 class="font-one animate__animated animate__fadeInUp fw-bold" >Projects</h1>
+
+
+<div class="container py-4">
+  <div class="row g-3">
+
+    <!-- Card 1: Carve -->
+    <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let project of projects; let i = index">
+      <mat-card class="project-card">
+        <img mat-card-image [src]="project.image" [alt]="project.name" [ngClass]="{'contain-image': project.name === 'HealthMagus','fit-image': project.name === 'Tic Tac Toe', 'cover-image': project.name !== 'HealthMagus Project'}" >
+        <mat-card-title class="px-3">
+          <a [href]="project.link" target="_blank" rel="noopener noreferrer">{{ project.name }}</a>
+        </mat-card-title>
+        <mat-card-content >
+          <p class="fonto">
+            {{ project.showMore ? project.description : (project.description | slice:0:65) + '...' }}
+          </p>
+          <button mat-button color="primary" (click)="toggleView(i)">
+            {{ project.showMore ? 'View Less' : 'View More' }}
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
 </div>
-    
-    
 </div>
